@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Task Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="login-page">
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+
+<div class="container">
+
+<!-- LEFT SIDE -->
+
+<div class="left-section">
+
+<h1>Task Management System</h1>
+
+<p>
+
+Organize your tasks efficiently.
+
+Stay productive.
+
+Never miss deadlines.
+
+</p>
+
+<div class="features">
+
+<div class="feature"
+onclick="dailyPlanner()">
+
+<i class="fa-solid fa-list-check"></i>
+
+Daily Planner
+
+</div>
+
+<div class="feature"
+onclick="alarmReminder()">
+
+<i class="fa-solid fa-bell"></i>
+
+Alarm Reminder
+
+</div>
+
+<div class="feature"
+onclick="dueDate()">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+Due Date Tracking
+
+</div>
+
+<div class="feature"
+onclick="dashboardInfo()">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Productivity Dashboard
+
+</div>
+
+</div>
+
+<p
+id="featureInfo"
+style="margin-top:25px;
+font-size:18px;
+font-weight:500;">
+
+Click any feature to know more.
+
+</p>
+
+</div>
+
+<!-- LOGIN CARD -->
+
+<div class="login-card">
+
+<h2>Welcome Back</h2>
+
+<p>
+
+Login to continue
+
+</p>
+
+<input
+type="text"
+placeholder="Full Name">
+
+<input
+type="email"
+placeholder="Email Address">
+
+<input
+type="password"
+placeholder="Password">
+
+<button onclick="loginUser()">
+    Login
+</button>
+
+<span class="footer-text">
+
+Mini Project • CSE
+
+</span>
+
+</div>
+
+</div>
+
+<script>
+
+function dailyPlanner(){
+
+document.getElementById("featureInfo").innerHTML=
+"📝 <b>Daily Planner</b><br>Create and organize your daily tasks to improve productivity.";
+
+}
+
+function alarmReminder(){
+
+document.getElementById("featureInfo").innerHTML=
+"🔔 <b>Alarm Reminder</b><br>Set an alarm while adding tasks to receive timely reminders.";
+
+}
+
+function dueDate(){
+
+document.getElementById("featureInfo").innerHTML=
+"📅 <b>Due Date Tracking</b><br>Monitor task deadlines and complete your work on time.";
+
+}
+
+function dashboardInfo(){
+
+document.getElementById("featureInfo").innerHTML=
+"📊 <b>Productivity Dashboard</b><br>View all your tasks, priorities and progress in one place.";
+
+}
+
+function loginUser(){
+
+    // Clear previous user's tasks and data
+    localStorage.clear();
+
+    // Go to dashboard
+    window.location = "dashboard.html";
+
+}
+
+</script>
+</body>
+
+</html>

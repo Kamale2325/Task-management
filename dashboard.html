@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="dashboard-page">
+
+<div class="wrapper">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2><i class="fa-solid fa-list-check"></i> Task Manager</h2>
+
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i>
+ Dashboard
+</a>
+
+<a href="tasks.html">
+<i class="fa-solid fa-list"></i>
+ View Tasks
+</a>
+
+<a href="#">
+<i class="fa-solid fa-bell"></i>
+ Notifications
+</a>
+
+<a href="index.html">
+<i class="fa-solid fa-right-from-bracket"></i>
+ Logout
+</a>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>Welcome 👋</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2 id="totalTasks">0</h2>
+<p>Total Tasks</p>
+</div>
+
+<div class="card">
+<h2>High</h2>
+<p>Priority</p>
+</div>
+
+<div class="card">
+<h2>Today</h2>
+<p>Planner</p>
+</div>
+
+<div class="card">
+<h2>24/7</h2>
+<p>Reminder</p>
+</div>
+
+</div>
+
+<div class="task-form">
+
+<h2>Add New Task</h2>
+
+<input
+type="text"
+id="task"
+placeholder="Enter Task Name">
+
+<select id="priority">
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+<input
+type="date"
+id="date">
+
+<input
+type="time"
+id="alarm">
+
+<textarea
+id="notes"
+placeholder="Additional Notes"></textarea>
+
+<button onclick="saveTask()">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Task
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
